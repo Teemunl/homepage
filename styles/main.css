@@ -1,19 +1,95 @@
-/* Add CSS to create the appearance of a Windows desktop */
-body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+body{
+  background-color: black;
+}
+.prompt-container {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid gray;
+  width: 300px;
+  height: 200px;
+}
+
+.prompt-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prompt-header-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.prompt-header-close-btn {
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.prompt{
+  color: #00ff00;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+#prompt-input {
+  border: none;
+  background-color: transparent;
+  color: #0f0;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  caret-color: #0f0;
+}
+.command {
+  color: green;
+}
+
+#prompt-input::before {
+  content: "";
+  width: 2px;
+  height: 14px;
+  background-color: rgb(0, 255, 0);
+  animation: blink 1s linear infinite;
+}
+.greent-text {
+  color: green;
+}
+.p {
+  color: green;
+  font-family: monospace;
+  margin: 0;
+}
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+.terminal-btn {
+  height: 30px;
+  width: 80px;
+  background-color: #444;
+  color: white;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+@keyframes blink {
+  0% {
+    background-color: transparent;
   }
-  /* Add CSS for the terminal window */
-  .terminal {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    width: 600px;
-    height: 400px;
-    margin: 50px auto;
+  50% {
+    background-color: green;
   }
-  /* Add CSS for the terminal prompt */
-  .prompt {
-    color: #00ff00;
+  100% {
+    background-color: transparent;
   }
-  
+}
