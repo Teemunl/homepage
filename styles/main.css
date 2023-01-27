@@ -1,0 +1,19 @@
+/* Add CSS to create the appearance of a Windows desktop */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  /* Add CSS for the terminal window */
+  .terminal {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    width: 600px;
+    height: 400px;
+    margin: 50px auto;
+  }
+  /* Add CSS for the terminal prompt */
+  .prompt {
+    color: #00ff00;
+  }
+  
