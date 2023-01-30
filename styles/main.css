@@ -71,7 +71,16 @@ body{
   width: 100%;
   background-color: #333;
 }
-
+.menu-btn {
+  height: 30px;
+  width: 80px;
+  background-color: #444;
+  color: white;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  outline-style: auto;
+}
 .terminal-btn {
   height: 30px;
   width: 80px;
