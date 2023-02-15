@@ -5,18 +5,28 @@
   <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
-<div class="prompt-container">
-  <div class="prompt-header">
-    <span class="prompt-header-title">Terminal</span>
-    <span class="prompt-header-close-btn">x</span>
+    <!-- dropdown for menu -->
+
+  <div class="prompt-container">
+    <div class="prompt-header">
+      <span class="prompt-header-title">Terminal</span>
+      <span class="prompt-header-close-btn">x</span>
+    </div>
+    <div class="prompt">C:\Users\username> 
+      <input type="text" id="prompt-input">
+    </div>
   </div>
-  <div class="prompt">C:\Users\username> 
-    <input type="text" id="prompt-input">
-  </div>
-</div>
   <div class="taskbar">
-    <button class="terminal-btn">Open Terminal</button>
+    <div class="dropdown">
+      <button class="dropbtn">Terminal</button>
+      <div class="dropdown-content" id="myDropdown">
+        <option class="terminal-btn">Terminal</button>
+        <option value="app2">App 2</option>
+        <option value="app3">App 3</option>
+      </div>
   </div>
   <script src="javascript/main.js"></script>
+
+</div>
 </body>
 </html>

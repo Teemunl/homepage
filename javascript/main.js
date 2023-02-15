@@ -63,3 +63,21 @@ var terminalBtn = document.querySelector('.terminal-btn');
 terminalBtn.addEventListener('click', function(){
     document.querySelector('.prompt-container').style.display = 'block';
 });
+
+// Get the button and the dropdown menu elements
+var button = document.getElementsByClassName("dropbtn")[0];
+var dropdown = document.getElementById("myDropdown");
+
+// Add a click event listener to the button
+button.addEventListener("click", function() {
+  // Toggle the display of the dropdown menu
+  dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+});
+
+// Add a click event listener to the document
+document.addEventListener("click", function(event) {
+  // If the click is outside the button or the dropdown menu, hide the menu
+  if (event.target !== button && event.target !== dropdown) {
+    dropdown.style.display = "none";
+  }
+});
